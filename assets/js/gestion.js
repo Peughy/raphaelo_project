@@ -1,16 +1,14 @@
 
 // sidebar
-let utilisateurs = document.querySelector(".project-presentation");
-let reservations = document.querySelector(".task-project");
-let activites = document.querySelector(".team-project");
-let produits = document.querySelector(".statistics");
+let clients = document.querySelector(".client-presentation");
+let commandes = document.querySelector(".commande-presentation");
+let produits = document.querySelector(".produit-presentation");
 let profil = document.querySelector(".profil-sections");
-let disponibilite = document.querySelector(".disponibilite");
 
 let links = document.querySelectorAll("#link");
 let title = document.getElementById("title");
-let titles = ["Clients", "Livreur", "Commandes", "Produits", "Disponibilite des activites", "Mon profil"];
-const sections = [utilisateurs, reservations, activites, produits, disponibilite, profil];
+let titles = ["Clients", "Commandes", "Menu - Recettes", "Produits", "Mon profil"];
+const sections = [clients, commandes, produits, profil];
 
 
 links.forEach((link, index) => {
@@ -43,7 +41,6 @@ links.forEach((link, index) => {
 
 let exit_btns = document.querySelector("#exit");
 let addProject = document.getElementById("add-project");
-let btn_create_project = document.getElementById("btn-create-project")
 
 
 exit_btns.addEventListener('click', () => {
@@ -53,76 +50,68 @@ exit_btns.addEventListener('click', () => {
   addProject.style.transform = "translateY(-100%)";
 })
 
-btn_create_project.addEventListener('click', () => {
-  addProject.style.transform = "translateY(0)"
-})
-
 // exit modify user
 let exit_modify = document.getElementById("exit_modify");
 let exit_delete_user = document.getElementById("exit_delete_user");
 let modify_users = document.getElementById("modify_users");
 let user_delete = document.getElementById("user_delete");
 
-// exit_modify.addEventListener('click', () => {
-//   let url = window.location.href;
-//   let new_url = url.split('&')[0];
-//   history.replaceState({}, "", new_url);
-//   modify_users.style.transform = "translateY(-100%)";
-// })
+let view_menus = document.querySelectorAll("#view_menus");
+let ids_produits = document.querySelectorAll("#ids_produits");
 
 // exit deleting division
 
 let add_product = document.getElementById("add_product");
-let btnAddMessage = document.getElementById("btnAddMessage");
-let exit_add_message = document.getElementById("exit_add_message");
+let btnAddProduct = document.getElementById("btnAddProduct");
 
-btnAddMessage.addEventListener('click', () => {
+
+
+btnAddProduct.addEventListener('click', () => {
   let url = window.location.href;
-  window.location.href = url + "&newProduct=true";
+  window.location.href = url + "&choice=add";
 })
 
-exit_add_message.addEventListener('click', () => {
+let exit_add_produit = document.getElementById("exit_add_produit");
+exit_add_produit.addEventListener('click', () => {
   add_product.style.transform = "translateY(-100%)";
   let url = window.location.href;
   history.replaceState({}, "", url.split("&")[0])
 })
-//
-// edit modify user
-//
-//
+
+view_menus.forEach((view_menu, index) =>{
+  view_menu.addEventListener('click', () => {
+    let url = window.location.href;
+    window.location.href = url + "&choice=modif&id_produit=" + encodeURIComponent(ids_produits[index].innerHTML);
+  })
+})
 
 
 //
-// edit modify activity
+// commande
 //
 //
 
+let views_btn_commandes = document.querySelectorAll("#views_btn_commandes");
+let ids_commande = document.querySelectorAll("#ids_commande");
+let exit_view_commande = document.getElementById("exit_view_commande");
+let view_commande = document.getElementById("view_commande");
 
-//
-// resservation
-//
-//
+views_btn_commandes.forEach((views_btn_commande, index) =>{
+  views_btn_commande.addEventListener('click', () => {
+    let url = window.location.href;
+    window.location.href = url + "&numero_commande=" + encodeURIComponent(ids_commande[index].innerHTML);
+  })
+})
 
-// let edit_reservations = document.querySelectorAll("#edit_reservations");
-// let numeros_reservations = document.querySelectorAll("#numeros_reservations");
-// let exit_modify_reservation = document.getElementById("exit_modify_reservation");
-// let modify_reservation = document.getElementById("modify_reservation");
-
-// edit_reservations.forEach((edit_reservation, index) =>{
-//   edit_reservation.addEventListener('click', () => {
-//     let url = window.location.href;
-//     window.location.href = url + "&numero=" + encodeURIComponent(numeros_reservations[index].innerHTML) + "&modifyReservation=true";
-//   })
-// })
-
-// exit_modify_reservation.addEventListener('click', () => {
-//   modify_reservation.style.transform = "translateY(-100%)";
-//   let url = window.location.href;
-//   history.replaceState({}, "", url.split("&")[0])
-// })
+exit_view_commande.addEventListener('click', () => {
+  view_commande.style.transform = "translateY(-100%)";
+  let url = window.location.href;
+  history.replaceState({}, "", url.split("&")[0])
+})
 
 //
 //
 // messages
 //
 //
+

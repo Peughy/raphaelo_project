@@ -93,7 +93,7 @@
 
         <div class="flex justify-center items-center flex-col">
             <h1 class="title my-12 text-center w-full text-main_color">Personnalisez vos commandes!</h1>
-            <p class="text-center mt-4 text-lg">Créez votre pizza comme vous l'aimez ! Personnalisez votre commande en choisissant parmi une variété d'ingrédients frais et de sauces. Grâce à notre service de personnalisation, vous êtes sûr de trouver la pizza qui vous fera craquer. <br> Des allergies ? Des envies particulières ? Aucun problème, nous adaptons votre pizza à vos goûts. Laissez libre cours à votre imagination et dégustez une pizza unique</p>
+            <p class="text-center mt-4 text-xl" style="margin: 0 15%;">Créez votre pizza comme vous l'aimez ! Personnalisez votre commande en choisissant parmi une variété d'ingrédients frais et de sauces. Grâce à notre service de personnalisation, vous êtes sûr de trouver la pizza qui vous fera craquer. <br> Des allergies ? Des envies particulières ? Aucun problème, nous adaptons votre pizza à vos goûts. Laissez libre cours à votre imagination et dégustez une pizza unique</p>
         </div>
 
         <div class="flex justify-center items-center flex-col">

@@ -1,13 +1,13 @@
 <nav class="bg-white dark:bg-gray-900 sticky shadow-md w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 px-16">
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="<?= IMG."logo.png" ?>" class="object-cover w-50px scale-150" alt="Raphaelo">
+        <img src="<?= IMG."logo.png" ?>" class="object-cover w-75px scale-150" alt="Raphaelo">
     </a>
     <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
 
       <?php
           if(!$user_connection){ ?>
-            <a style="margin-right: 8px;" href="index.php?action=signIn" type="button" class="hover:text-main_color btn mr-2 border-2 border-main_color text-main_color hover:bg-main_color hover:text-white hover:cursor-pointer">connexion</a>
+            <a style="margin-right: 8px;" href="index.php?action=signIn" type="button" class="hover:text-main_color btn mr-2 border-2 text-lg border-main_color text-main_color hover:bg-main_color hover:text-white hover:cursor-pointer">connexion</a>
           <?php } else { ?>
             <a href="#" class="group" style="margin-right: 8px;">
               <svg class="w-8 h-8 text-black group-hover:text-main_color" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -31,13 +31,13 @@
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-radius bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <a href="index.php" class="li" aria-current="page">Acceuil</a>
+          <a href="index.php" class="li text-xl <?php if($action == "home"){ echo "active"; } ?>" aria-current="page">Acceuil</a>
         </li>
         <li>
-          <a href="index.php?action=menu" class="li">Menu</a>
+          <a href="index.php?action=menu" class="li text-xl <?php if($action == "menu"){ echo "active"; } ?>">Menu</a>
         </li>
         <li>
-          <a href="index.php?action=localisation" class="li">Localisation</a>
+          <a href="index.php?action=localisation" class="li text-xl <?php if($action == "localisation"){ echo "active"; } ?>">Localisation</a>
         </li>
       </ul>
     </div>

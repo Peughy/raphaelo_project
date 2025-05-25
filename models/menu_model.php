@@ -9,7 +9,7 @@ class ModelMenu{
     public function getInformations()
     {
         $this->database = new BDConnection();
-        $statement = $this->database->getConnection()->query("SELECT * FROM produits");
+        $statement = $this->database->getConnection()->query("SELECT * FROM produits WHERE DATEDIFF(CURRENT_DATE, date_ajout) > 15");
         return $statement->fetchAll();
     }
 
@@ -19,5 +19,12 @@ class ModelMenu{
         $statement = $this->database->getConnection()->prepare("SELECT * FROM produits WHERE id_produit = ?");
         $statement->execute(array($id_produit));
         return $statement->fetch();
+    }
+
+    public function getAllLast()
+    {
+        $this->database = new BDConnection();
+        $statement = $this->database->getConnection()->query("SELECT * FROM produits WHERE DATEDIFF(CURRENT_DATE, date_ajout) < 15");
+        return $statement->fetchAll();
     }
 }

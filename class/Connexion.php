@@ -26,17 +26,10 @@ class Connexion{
                     exit();
                 }
 
-                if($data["type_account"] == "livreur")
-                {
-                    // header("Location: index.php?action=gestion");
-                    // exit();
-
-                }
-
                 if($data["type_account"] == "gest")
                 {
-                    // header("Location: index.php?action=gestion");
-                    // exit();
+                    header("Location: index.php?action=gestion");
+                    exit();
                 }
             }
             else{

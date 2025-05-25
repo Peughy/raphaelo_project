@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require_once('class/Connexion.php');
 
 if(isset($_GET["error"]))

@@ -20,4 +20,4 @@ define('DOCUMENT', HOST."document/");
 
 
 //class
-define('CLASS', ROOT."class/");
+define('CLASSES', ROOT."class/");

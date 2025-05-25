@@ -13,7 +13,7 @@ let close_more_product = document.getElementById("close_more_product")
 let more_product = document.getElementById("more_product")
 
 close_more_product.addEventListener('click', () => {
-    more_product.style.transform = "translate(100%)";
+    more_product.style.transform = "translateY(-100%)";
     let url = window.location.href;
     history.replaceState({}, "", url.split("&")[0])
 })

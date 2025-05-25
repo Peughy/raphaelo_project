@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= CSS ?>gestion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -16,8 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Gestion</title> 
+    <title>Gestion</title>
 </head>
+
 <body>
 
     <!-- content the link's bar -->
@@ -28,51 +30,53 @@
         <hr>
 
         <!-- links -->
-        <div class="links">
-            <ul>
-                <li>
-                    <button href="" id="link" class="link">
-                        <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd" d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z" clip-rule="evenodd"/>
-                        </svg> 
-                        Clients
-                    </button>
-                </li>
-                <li>
-                    <button href="" id="link" class="link">
-                        <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd" d="M4 4a2 2 0 0 0-2 2v9a1 1 0 0 0 1 1h.535a3.5 3.5 0 1 0 6.93 0h3.07a3.5 3.5 0 1 0 6.93 0H21a1 1 0 0 0 1-1v-4a.999.999 0 0 0-.106-.447l-2-4A1 1 0 0 0 19 6h-5a2 2 0 0 0-2-2H4Zm14.192 11.59.016.02a1.5 1.5 0 1 1-.016-.021Zm-10 0 .016.02a1.5 1.5 0 1 1-.016-.021Zm5.806-5.572v-2.02h4.396l1 2.02h-5.396Z" clip-rule="evenodd"/>
-                        </svg>
-                        Livreurs
-                    </button>
-                </li>
-                <li>
-                    <button href="" id="link" class="link">
-                        <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M4 5a2 2 0 0 0-2 2v2.5a1 1 0 0 0 1 1 1.5 1.5 0 1 1 0 3 1 1 0 0 0-1 1V17a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2.5a1 1 0 0 0-1-1 1.5 1.5 0 1 1 0-3 1 1 0 0 0 1-1V7a2 2 0 0 0-2-2H4Z"/>
-                        </svg>
-                        Commandes
-                    </button>
-                </li>
-                <li>
-                    <button href="" id="link" class="link">
-                        <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd" d="M20 10H4v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8ZM9 13v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1Z" clip-rule="evenodd"/>
-                            <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2Z"/>
-                        </svg>
-                        Produits
-                    </button>
-                </li>
-                <li>
-                    <button href="" id="link" class="link active">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M13.5 2c-.178 0-.356.013-.492.022l-.074.005a1 1 0 0 0-.934.998V11a1 1 0 0 0 1 1h7.975a1 1 0 0 0 .998-.934l.005-.074A7.04 7.04 0 0 0 22 10.5 8.5 8.5 0 0 0 13.5 2Z"></path>
-                        <path d="M11 6.025a1 1 0 0 0-1.065-.998 8.5 8.5 0 1 0 9.038 9.039A1 1 0 0 0 17.975 13H11V6.025Z"></path>
+        <div class="Glinks">
+            <div class="links">
+                <ul>
+                    <li>
+                        <button href="" id="link" class="link">
+                            <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z" clip-rule="evenodd" />
+                            </svg>
+                            Clients
+                        </button>
+                    </li>
+                    <li>
+                        <button href="" id="link" class="link active">
+                            <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M4 5a2 2 0 0 0-2 2v2.5a1 1 0 0 0 1 1 1.5 1.5 0 1 1 0 3 1 1 0 0 0-1 1V17a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2.5a1 1 0 0 0-1-1 1.5 1.5 0 1 1 0-3 1 1 0 0 0 1-1V7a2 2 0 0 0-2-2H4Z" />
+                            </svg>
+                            Commandes
+                        </button>
+                    </li>
+                    <li>
+                        <button href="" id="link" class="link">
+                            <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M20 10H4v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8ZM9 13v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1Z" clip-rule="evenodd" />
+                                <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2Z" />
+                            </svg>
+                            Menu - Recette
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div style="padding: 24px 0 24px 24px; margin: 12px 0;">
+                <button name="" href="" id="link" class="link" style="margin: 32px 0;">
+                    <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M17 10v1.126c.367.095.714.24 1.032.428l.796-.797 1.415 1.415-.797.796c.188.318.333.665.428 1.032H21v2h-1.126c-.095.367-.24.714-.428 1.032l.797.796-1.415 1.415-.796-.797a3.979 3.979 0 0 1-1.032.428V20h-2v-1.126a3.977 3.977 0 0 1-1.032-.428l-.796.797-1.415-1.415.797-.796A3.975 3.975 0 0 1 12.126 16H11v-2h1.126c.095-.367.24-.714.428-1.032l-.797-.796 1.415-1.415.796.797A3.977 3.977 0 0 1 15 11.126V10h2Zm.406 3.578.016.016c.354.358.574.85.578 1.392v.028a2 2 0 0 1-3.409 1.406l-.01-.012a2 2 0 0 1 2.826-2.83ZM5 8a4 4 0 1 1 7.938.703 7.029 7.029 0 0 0-3.235 3.235A4 4 0 0 1 5 8Zm4.29 5H7a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h6.101A6.979 6.979 0 0 1 9 15c0-.695.101-1.366.29-2Z" clip-rule="evenodd" />
                     </svg>
-                        Statistiques
+
+                    Profil
+                </button>
+                <form action="index.php?action=gestion" method="post">
+                    <button type="submit" name="logout_btn" href="" id="" class="link">
+                        <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H8m12 0-4 4m4-4-4-4M9 4H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h2" />
+                        </svg>
+                        Deconnexion
                     </button>
-                </li>
-            </ul>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -81,21 +85,22 @@
         <nav class="navigation">
             <div class="menu">
                 <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10" />
                 </svg>
                 <div class="search">
                     <input type="search" name="" id="" placeholder="Rechercher...">
                 </div>
             </div>
-            <div>
-                <button class="notification">
-                    <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M17.133 12.632v-1.8a5.406 5.406 0 0 0-4.154-5.262.955.955 0 0 0 .021-.106V3.1a1 1 0 0 0-2 0v2.364a.955.955 0 0 0 .021.106 5.406 5.406 0 0 0-4.154 5.262v1.8C6.867 15.018 5 15.614 5 16.807 5 17.4 5 18 5.538 18h12.924C19 18 19 17.4 19 16.807c0-1.193-1.867-1.789-1.867-4.175ZM8.823 19a3.453 3.453 0 0 0 6.354 0H8.823Z"/>
-                      </svg>                      
-                </button>
-                <button class="img-profil" id="link">
-                    <!-- <img src="../profil/img.jpg" alt=""> -->
-                </button>
+            <div class="">
+                <span class="letterOne">
+                    <p>
+                        <?= ucfirst($user_prop["username"][0]) ?>
+                    </p>
+                </span>
+                <div class="info_userProp">
+                    <p class="name"><?= ucfirst($user_prop["username"]) ?></p>
+                    <p class="role">Admin</p>
+                </div>
             </div>
         </nav>
 
@@ -109,12 +114,6 @@
             <!-- title section -->
             <div class="title">
                 <h1 style="color: #ff0000">Gestion Raphaëlo</h1>
-                <button class="add" id="btn-create-project">
-                    <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/>
-                      </svg>                      
-                    Ajouter un livreur
-                </button>
             </div>
 
             <!-- card presentation -->
@@ -126,31 +125,13 @@
                     <div class="card-header">
                         <p>Clients</p>
                         <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd" d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z" clip-rule="evenodd"/>
-                        </svg>                           
+                            <path fill-rule="evenodd" d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z" clip-rule="evenodd" />
+                        </svg>
                     </div>
 
                     <!-- body -->
                     <div class="card-body">
                         <p class="number"><?= $nbrs_client ?></p>
-                    </div>
-                </div>
-
-                <!-- card reservation -->
-                <div class="card">
-
-                    <!-- header -->
-                    <div class="card-header">
-                        <p>Livreurs</p>
-                        <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd" d="M4 4a2 2 0 0 0-2 2v9a1 1 0 0 0 1 1h.535a3.5 3.5 0 1 0 6.93 0h3.07a3.5 3.5 0 1 0 6.93 0H21a1 1 0 0 0 1-1v-4a.999.999 0 0 0-.106-.447l-2-4A1 1 0 0 0 19 6h-5a2 2 0 0 0-2-2H4Zm14.192 11.59.016.02a1.5 1.5 0 1 1-.016-.021Zm-10 0 .016.02a1.5 1.5 0 1 1-.016-.021Zm5.806-5.572v-2.02h4.396l1 2.02h-5.396Z" clip-rule="evenodd"/>
-                        </svg>
-                   
-                    </div>
-
-                    <!-- body -->
-                    <div class="card-body">
-                        <p class="number"><?= count($livreurs_infos) ?></p>
                     </div>
                 </div>
 
@@ -161,26 +142,26 @@
                     <div class="card-header">
                         <p>Commandes</p>
                         <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M4 5a2 2 0 0 0-2 2v2.5a1 1 0 0 0 1 1 1.5 1.5 0 1 1 0 3 1 1 0 0 0-1 1V17a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2.5a1 1 0 0 0-1-1 1.5 1.5 0 1 1 0-3 1 1 0 0 0 1-1V7a2 2 0 0 0-2-2H4Z"/>
+                            <path d="M4 5a2 2 0 0 0-2 2v2.5a1 1 0 0 0 1 1 1.5 1.5 0 1 1 0 3 1 1 0 0 0-1 1V17a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2.5a1 1 0 0 0-1-1 1.5 1.5 0 1 1 0-3 1 1 0 0 0 1-1V7a2 2 0 0 0-2-2H4Z" />
                         </svg>
-                                              
+
                     </div>
 
                     <!-- body -->
                     <div class="card-body">
-                        <p class="number"><?= count($activity_informations) ?></p>
+                        <p class="number"><?= count($commande_infos) ?></p>
                     </div>
                 </div>
-                
+
                 <div class="card">
 
                     <!-- header -->
                     <div class="card-header">
-                        <p>Produits</p>
+                        <p>Menu - Recettes</p>
                         <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd" d="M20 10H4v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8ZM9 13v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1Z" clip-rule="evenodd"/>
-                            <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2Z"/>
-                        </svg>                          
+                            <path fill-rule="evenodd" d="M20 10H4v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8ZM9 13v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1Z" clip-rule="evenodd" />
+                            <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2Z" />
+                        </svg>
                     </div>
 
                     <!-- body -->
@@ -189,16 +170,16 @@
                     </div>
                 </div>
 
-                
+
             </div>
 
             <!-- projects description -->
             <div class="header">
-                <p id="title">Disponibilite des activites</p>
+                <p id="title">Commandes</p>
             </div>
-                
-            <!-- utilisateurs section -->
-            <div class="project-presentation">
+
+            <!-- client -->
+            <div class="client-presentation">
                 <div class="project-display" id="project-lists">
                     <table class="table">
                         <tr class="head">
@@ -208,9 +189,9 @@
                             <td>Type de compte</td>
                         </tr>
                         <?php
-                        foreach($users_informations as $users_information){
-                            if($users_information["type_account"] == "client"){
-                            ?>
+                        foreach ($users_informations as $users_information) {
+                            if ($users_information["type_account"] == "client") {
+                        ?>
                                 <tr class="body">
                                     <td>
                                         <div class="infos">
@@ -219,91 +200,104 @@
                                             <p id="registrations" style="display: none;"><?= $users_information["id_user"] ?></p>
                                         </div>
                                     </td>
-                                    <td><p class="name">+237 <?= $users_information["phone"] ?></p></td>
-                                    <td><?= date('d/m/Y H:m:s', strtotime($users_information["date_inscription"])) ?></td>
-                                    <td><p class="name"> <?= ucfirst($users_information["type_account"]) ?> (e)</p></td>
                                     <td>
-                                        <button class="delete" id="delete_users">
-                                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                                <path fill-rule="evenodd" d="M8.586 2.586A2 2 0 0 1 10 2h4a2 2 0 0 1 2 2v2h3a1 1 0 1 1 0 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8a1 1 0 0 1 0-2h3V4a2 2 0 0 1 .586-1.414ZM10 6h4V4h-4v2Zm1 4a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0v-8Zm4 0a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0v-8Z" clip-rule="evenodd"/>
-                                            </svg>
-                                        </button>
+                                        <p class="name"><?= $users_information["phone"] ?></p>
+                                    </td>
+                                    <td><?= date('d/m/Y H:m:s', strtotime($users_information["date_inscription"])) ?></td>
+                                    <td>
+                                        <p class="name"> <?= ucfirst($users_information["type_account"]) ?> (e)</p>
                                     </td>
                                 </tr>
-                        <?php } } ?>
+                        <?php }
+                        } ?>
                     </table>
                 </div>
             </div>
 
-            <!-- Livreurs -->
-            <div class="task-project">
-                <!-- chart -->
-                 <div class="chart">
-                    <div class="project-display" id="project-lists">
-                        <table class="table">
-                            <tr class="head">
-                                <td>Noms</td>
-                                <td>Date d'inscription</td>
-                                <td>Telephone</td>
-                                <td>Representation</td>
-                            </tr>
-                                <?php
-                                foreach($livreurs_infos as $livreurs_info){ 
-                                    $lieux = $livreur_model->getRepresentation($livreurs_info["id_user"]);
-                                    ?>
-                                    <tr class="body" id="tasks">
-                                        <td>
-                                            <p class="name"><?= $livreurs_info["username"] ?></p>
-                                            <p class="email"><?= $livreurs_info["email"] ?></p>
-                                            <p id="numeros_reservations" style="display: none;"><?= $livreurs_info["num_reservation"] ?></p>
-                                        </td>
-                                        <td>
-                                            <div class="infos">
-                                            <p class=""><?= $livreurs_info["date_inscription"] ?></p>
-                                            </div>
-                                        </td>
-                                        <td><?= $livreurs_info["phone"] ?></td>
-                                        <td><?= $lieux["lieu"] ?></td>
-                                        <td>
-                                            <button class="edit" id="edit_reservations">
-                                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                                    <path fill-rule="evenodd" d="M11.32 6.176H5c-1.105 0-2 .949-2 2.118v10.588C3 20.052 3.895 21 5 21h11c1.105 0 2-.948 2-2.118v-7.75l-3.914 4.144A2.46 2.46 0 0 1 12.81 16l-2.681.568c-1.75.37-3.292-1.263-2.942-3.115l.536-2.839c.097-.512.335-.983.684-1.352l2.914-3.086Z" clip-rule="evenodd"/>
-                                                    <path fill-rule="evenodd" d="M19.846 4.318a2.148 2.148 0 0 0-.437-.692 2.014 2.014 0 0 0-.654-.463 1.92 1.92 0 0 0-1.544 0 2.014 2.014 0 0 0-.654.463l-.546.578 2.852 3.02.546-.579a2.14 2.14 0 0 0 .437-.692 2.244 2.244 0 0 0 0-1.635ZM17.45 8.721 14.597 5.7 9.82 10.76a.54.54 0 0 0-.137.27l-.536 2.84c-.07.37.239.696.588.622l2.682-.567a.492.492 0 0 0 .255-.145l4.778-5.06Z" clip-rule="evenodd"/>
-                                                </svg>
-                                            </button>
-                                        </td>
-                                        <td>
-                                            <button class="delete" id="edit_reservations">
-                                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                                    <path fill-rule="evenodd" d="M8.586 2.586A2 2 0 0 1 10 2h4a2 2 0 0 1 2 2v2h3a1 1 0 1 1 0 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8a1 1 0 0 1 0-2h3V4a2 2 0 0 1 .586-1.414ZM10 6h4V4h-4v2Zm1 4a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0v-8Zm4 0a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0v-8Z" clip-rule="evenodd"/>
-                                                </svg>
-                                        </td>
-                                <?php } ?>
-                        </table>
-                    </div>
-                 </div>
-            </div>
-
             <!-- commandes -->
-            <div class="team-project">
-                <div class="activite-group">
-
+            <div class="commande-presentation">
+                <form action="index.php?action=gestion" method="post" class="form">
+                    <input type="number" value="<?php if (isset($_POST["num_commande_search"])) {
+                                                    echo $_POST["num_commande_search"];
+                                                } ?>" name="num_commande_search" id="" placeholder="Rechercher une commande">
+                    <input type="submit" value="Rechercher" name="search_commande_btn">
+                    <input type="submit" value="Annuler" name="cancel_commande_btn">
+                </form>
+                <div class="project-display" id="project-lists">
+                    <table class="table">
+                        <tr class="head">
+                            <td>Date Commande</td>
+                            <td>Nom client </td>
+                            <td>Tel client</td>
+                            <td>Nom plat</td>
+                            <td>Representation agence</td>
+                            <td>Etat de la commande</td>
+                        </tr>
+                        <?php
+                        foreach ($commande_infos as $commande_info) {
+                            if ($commande_info) {
+                        ?>
+                                <tr class="body">
+                                    <td>
+                                        <div class="infos">
+                                            <p class="name"><?= date('d/m/Y H:m:s', strtotime($commande_info["date_commnade"])) ?></p>
+                                            <p id="ids_commande" style="display: none;"><?= $commande_info["num_commande"] ?></p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="email"><?= $commande_info["username"] ?></p>
+                                    </td>
+                                    <td>
+                                        <p class="name"><?= $commande_info["phone"] ?></p>
+                                    </td>
+                                    <td>
+                                        <p class="name"><?= $commande_info["nom_produit"] ?></p>
+                                    </td>
+                                    <td>
+                                        <p class="name"><?= $commande_info["lieu"] ?></p>
+                                    </td>
+                                    <td>
+                                        <p style="display: inline;" class="<?php if ($commande_info["etat_commande"] == "attente") {
+                                                                                echo "badge-attente";
+                                                                            } else {
+                                                                                echo "badge-livre";
+                                                                            } ?>"><?= $commande_info["etat_commande"] ?></p>
+                                    </td>
+                                    <td>
+                                        <button class="delete" id="views_btn_commandes" onclick="">
+                                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                                <path fill-rule="evenodd" d="M4.998 7.78C6.729 6.345 9.198 5 12 5c2.802 0 5.27 1.345 7.002 2.78a12.713 12.713 0 0 1 2.096 2.183c.253.344.465.682.618.997.14.286.284.658.284 1.04s-.145.754-.284 1.04a6.6 6.6 0 0 1-.618.997 12.712 12.712 0 0 1-2.096 2.183C17.271 17.655 14.802 19 12 19c-2.802 0-5.27-1.345-7.002-2.78a12.712 12.712 0 0 1-2.096-2.183 6.6 6.6 0 0 1-.618-.997C2.144 12.754 2 12.382 2 12s.145-.754.284-1.04c.153-.315.365-.653.618-.997A12.714 12.714 0 0 1 4.998 7.78ZM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                        <?php }
+                        } ?>
+                    </table>
                 </div>
             </div>
 
             <!-- produits -->
-            <div class="statistics">
+            <div class="produit-presentation">
+                <form action="index.php?action=gestion" method="post" class="form">
+                    <input type="name" value="<?php if (isset($_POST["name_menu_search"])) {
+                                                    echo $_POST["name_menu_search"];
+                                                } ?>" name="name_menu_search" id="" placeholder="Rechercher un menu">
+                    <input type="submit" value="Rechercher" name="search_menu_btn">
+                    <input type="submit" value="Annuler" name="cancel_menu_btn">
+                </form>
                 <div class="add-message">
-                    <button class="add" id="btnAddMessage">
+                    <button class="add" id="btnAddProduct">
                         <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/>
-                            </svg>                      
-                        Ajouter un produit
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5" />
+                        </svg>
+                        Ajouter un menu
                     </button>
                 </div>
                 <div class="activite-group">
                     <?php
-                        foreach($products_infos as $products_info) { ?>
+                    foreach ($products_infos as $products_info) {
+                        if ($products_info) { ?>
                             <div class="activite-card">
 
                                 <!-- activite header -->
@@ -317,73 +311,25 @@
                                     <p class="notes"><?= $products_info["prix"] ?> FCFA</p>
                                 </div>
                                 <div class="activite-body">
-                                    <p class="notes"><?= ucfirst($products_info["type_pizza"]) ?></p>
+                                    <p class="notes"><?= ucfirst($products_info["type_produit"]) ?></p>
                                 </div>
-                                
+
                                 <div class="activite-footer">
-                                    <p class="numero"><span id="numero_activites"><?= $products_info["id_produit"] ?></span></p>
+                                    <p class="numero"><span id="ids_produits"><?= $products_info["id_produit"] ?></span></p>
                                     <div class="actions">
-                                        <button class="edit" id="edit_activites">
+                                        <button class="edit" id="view_menus">
                                             <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                                <path fill-rule="evenodd" d="M11.32 6.176H5c-1.105 0-2 .949-2 2.118v10.588C3 20.052 3.895 21 5 21h11c1.105 0 2-.948 2-2.118v-7.75l-3.914 4.144A2.46 2.46 0 0 1 12.81 16l-2.681.568c-1.75.37-3.292-1.263-2.942-3.115l.536-2.839c.097-.512.335-.983.684-1.352l2.914-3.086Z" clip-rule="evenodd"/>
-                                                <path fill-rule="evenodd" d="M19.846 4.318a2.148 2.148 0 0 0-.437-.692 2.014 2.014 0 0 0-.654-.463 1.92 1.92 0 0 0-1.544 0 2.014 2.014 0 0 0-.654.463l-.546.578 2.852 3.02.546-.579a2.14 2.14 0 0 0 .437-.692 2.244 2.244 0 0 0 0-1.635ZM17.45 8.721 14.597 5.7 9.82 10.76a.54.54 0 0 0-.137.27l-.536 2.84c-.07.37.239.696.588.622l2.682-.567a.492.492 0 0 0 .255-.145l4.778-5.06Z" clip-rule="evenodd"/>
+                                                <path fill-rule="evenodd" d="M11.32 6.176H5c-1.105 0-2 .949-2 2.118v10.588C3 20.052 3.895 21 5 21h11c1.105 0 2-.948 2-2.118v-7.75l-3.914 4.144A2.46 2.46 0 0 1 12.81 16l-2.681.568c-1.75.37-3.292-1.263-2.942-3.115l.536-2.839c.097-.512.335-.983.684-1.352l2.914-3.086Z" clip-rule="evenodd" />
+                                                <path fill-rule="evenodd" d="M19.846 4.318a2.148 2.148 0 0 0-.437-.692 2.014 2.014 0 0 0-.654-.463 1.92 1.92 0 0 0-1.544 0 2.014 2.014 0 0 0-.654.463l-.546.578 2.852 3.02.546-.579a2.14 2.14 0 0 0 .437-.692 2.244 2.244 0 0 0 0-1.635ZM17.45 8.721 14.597 5.7 9.82 10.76a.54.54 0 0 0-.137.27l-.536 2.84c-.07.37.239.696.588.622l2.682-.567a.492.492 0 0 0 .255-.145l4.778-5.06Z" clip-rule="evenodd" />
                                             </svg>
 
-                                        </button>
-                                        <button class="delete" id="delete_activites">
-                                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                                <path fill-rule="evenodd" d="M8.586 2.586A2 2 0 0 1 10 2h4a2 2 0 0 1 2 2v2h3a1 1 0 1 1 0 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8a1 1 0 0 1 0-2h3V4a2 2 0 0 1 .586-1.414ZM10 6h4V4h-4v2Zm1 4a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0v-8Zm4 0a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0v-8Z" clip-rule="evenodd"/>
-                                            </svg>
                                         </button>
                                     </div>
                                 </div>
                             </div>
-                        <?php } ?>
+                    <?php }
+                    } ?>
                 </div>
-            </div>
-            
-            <!-- disponibilite des tache -->
-            <div class="disponibilite">
-
-                <!-- date section -->
-                <div class="date-search">
-                    <form action="index.php?action=gestion" method="post">
-                        <label>Veuillez choisir une date</label>
-                        <div> 
-                            <input type="date" id="" min="<?= date("Y-m-d") ?>" name="date_searching" value="<?= $date_searching ?>">
-                            <input type="submit" value="Rechercher" name="search_date">
-                        </div>
-                    </form>
-                </div>
-
-                <div class="stats">
-                    <h1 class="">Disponnibilite des activites pour <?= ($date_searching == date("Y-m-d")) ? "Aujourd'hui" : "le ".$date_searching ?></h1>
-                    <?php
-                    if(count($reservation_numbers) == 0){
-                        foreach($activity_informations as $activity_information){ ?>
-                            <div class="stat">
-                                <p><?= $activity_information["nom"] ?></p>
-                                <div class="purcent">
-                                    <div class="total">Aucune reservation</div>
-                                    <div class="variant" style="width: 0%"></div>
-                                </div>
-                            </div>
-                    <?php } 
-                    }else{
-                        foreach($activity_informations as $activity_information){
-                            foreach($reservation_numbers as $reservation_number){
-                        ?>
-                        <div class="stat">
-                            <p><?= $activity_information["nom"] ?> <?= ($activity_information["numero"] == $reservation_number["numero"]) ? 
-                                "(".($activity_information["reservation_max"] - $reservation_number["qte"])." activite(s) disponibl(e) sur ".$activity_information["reservation_max"].")" : "" ?></p>
-                            <div class="purcent">
-                                <div class="total"><?= ($activity_information["numero"] == $reservation_number["numero"]) ? "" : "Aucune reservation" ?></div>
-                                <div class="variant" style="width: <?= ($activity_information["numero"] == $reservation_number["numero"]) ? ($reservation_number["qte"]*100)/$activity_information["reservation_max"] : 0 ?>%"></div>
-                            </div>
-                        </div>
-                    <?php } } }?>
-                </div>
-
             </div>
 
             <!-- profil -->
@@ -392,44 +338,48 @@
                 <form action="" method="post">
                     <div class="div-input">
                         <label for="">Nom d'utilisateur</label>
-                        <input type="text" name="">
+                        <input type="text" name="username" value="<?= $user_prop["username"] ?>">
                     </div>
                     <div class="div-input">
                         <label for="">Adresse mail</label>
-                        <input type="email" name="">
+                        <input type="email" name="email" value="<?= $user_prop["email"] ?>">
                     </div>
                     <div class="div-input">
                         <label for="">Mot de passe</label>
-                        <input type="password" name="">
+                        <input type="password" name="mdp" value="">
+                    </div>
+                    <div class="div-input">
+                        <label for="">Telephone</label>
+                        <input type="text" name="tel" value="<?= $user_prop["phone"] ?>">
                     </div>
                     <div class="div-submit">
                         <input type="submit" value="Modifier">
                     </div>
                 </form>
-
-                <p class="title">Projects travailles</p>
             </div>
         </div>
 
     </div>
 
     <!-- displaying the form to add a livreur -->
-    <div class="add-project" id="add-project" 
-    style="transform: <?= (isset($_GET["addLivreur"]) && $_GET["addLivreur"] == true) ? "translateY(0)" : ""  ?>">
+    <div class="add-project" id="add-project"
+        style="transform: <?= (isset($_GET["addLivreur"]) && $_GET["addLivreur"] == true) ? "translateY(0)" : ""  ?>">
 
         <div class="project">
             <span id="exit">&times;</span>
             <div class="header">
-                <?php if(isset($msg)){ echo "<p class=\"erreur\">".$msg."</p>"; } ?>
-                <h1 class="title">Ajouter un livreur</h1>
+                <?php if (isset($msg)) {
+                    echo "<p class=\"erreur\">" . $msg . "</p>";
+                } ?>
+                <h1 class="title">Ajouter une commande</h1>
             </div>
             <form action="index.php?action=gestion" method="post" enctype="multipart/form-data" class="form_activite">
                 <div class="div-input">
-                    <label for="name" class="name">Nom du livreur</label>
+                    <label for="name" class="name">Nom du client</label>
                     <input type="text" name="name" id="nom" placeholder="Nom d'utilisateur">
                 </div>
                 <div class="div-input">
-                    <label for="name" class="name">Adresse  mail</label>
+                    <label for="name" class="name">Adresse mail</label>
                     <input type="email" min="0" name="email" id="name" placeholder="Prix">
                 </div>
                 <div class="div-input">
@@ -445,9 +395,9 @@
                     <select name="representation" id="type" style="cursor: pointer;">
                         <option value="">--</option>
                         <?php
-                            foreach($representations as $representation){ ?>
-                                <option value="<?= $representation["id_representation"] ?>"><?= $representation["lieu"] ?></option>
-                            <?php } ?>
+                        foreach ($representations as $representation) { ?>
+                            <option value="<?= $representation["id_representation"] ?>"><?= $representation["lieu"] ?></option>
+                        <?php } ?>
                     </select>
                 </div>
                 <div class="div-input">
@@ -461,54 +411,183 @@
 
     <!-- add produit  -->
     <div class="add-project" id="add_product"
-    style="transform: <?= (isset($_GET["newProduct"]) && $_GET["newProduct"] == true) ? "translateY(0)" : ""  ?>">
+        style="transform: <?= (isset($_GET["choice"]) && $_GET["choice"]) ? "translateY(0)" : ""  ?>">
         <div class="project">
-            <span id="exit_add_message">&times;</span>
+            <span id="exit_add_produit">&times;</span>
             <div class="header">
-                <?php if(isset($msg)){ echo "<p class=\"erreur\">".$msg."</p>"; }?>
-                <h1 class="title">Ajouter un produit</h1>
+                <?php if (isset($msg)) {
+                    echo "<p class=\"erreur\">" . $msg . "</p>";
+                } ?>
+                <h1 class="title">
+                    <?php
+                    if ($choice == "modif") {
+                        echo "Modifier ";
+                    } else {
+                        echo "Ajouter ";
+                    }
+                    ?> un menu</h1>
             </div>
-            <form action="index.php?action=gestion&newProduct=true" method="post" enctype="multipart/form-data" class="form_activite">
+            <form action="<?php
+                            if ($choice == "modif") {
+                                echo "index.php?action=gestion&id_produit=" . $_GET["id_produit"] . "&choice=modif";
+                            } else {
+                                echo "index.php?action=gestion&choice=add ";
+                            }
+                            ?>" enctype="multipart/form-data" method="post" enctype="multipart/form-data" class="form_activite">
                 <div class="div-input">
                     <label for="name" class="name">Nom du produit</label>
-                    <input type="text" placeholder="Nom produit" name="name">
+                    <input type="text" placeholder="Nom produit" name="name" value="<?php if (isset($produit)) {
+                                                                                        echo $produit["nom_produit"];
+                                                                                    } ?>">
                 </div>
                 <div class="div-input">
                     <label for="name" class="name">Prix du produit</label>
-                    <input type="number" placeholder="Prix" name="prix">
+                    <input type="number" min="0" placeholder="Prix" name="prix" value="<?php if (isset($produit)) {
+                                                                                            echo $produit["prix"];
+                                                                                        } ?>">
                 </div>
                 <div class="div-input">
                     <label for="" class="name">Ingredients</label>
-                    <textarea name="ingredient" id="" cols="5" rows="3" placeholder="ecrivez..."></textarea>
+                    <textarea name="ingredient" id="" cols="10" rows="8" placeholder="ecrivez..."><?php if (isset($produit)) {
+                                                                                                        echo $produit["ingredient"];
+                                                                                                    } ?></textarea>
                 </div>
                 <div class="div-input">
                     <label for="" class="name">Description</label>
-                    <textarea name="description" id="" cols="5" rows="3" placeholder="ecrivez..."></textarea>
+                    <textarea name="description" id="" cols="15" rows="10" placeholder="ecrivez..."><?php if (isset($produit)) {
+                                                                                                        echo $produit["description"];
+                                                                                                    } ?></textarea>
                 </div>
                 <div class="div-input">
-                    <label for="name" class="name">Photo d'illustration</label>
-                    <input type="file" name="image" id="">
+
+                    <?php
+                    if ($choice == "add") { ?>
+                        <label for="name" class="name">Photo d'illustration</label>
+                        <input type="file" name="image" id="">
+                    <?php
+
+                    } else { ?>
+                        <img src="assets/produitsImages/<?= $produit["image"] ?>" alt="" style="object-fit: cover; width: 100%; height: 150px; border-radius: 16px">
+                    <?php
+                    }
+                    ?>
                 </div>
                 <div class="div-input">
-                    <label for="" class="name">Type de pizza</label>
-                    <select name="type_pizza" id="">
+                    <label for="" class="name">Type de produit</label>
+                    <select name="type_produit" id="">
                         <option value="">--</option>
-                        <option value="simple">Simple</option>
-                        <option value="large">Large</option>
-                        <option value="famille">Famille</option>
+                        <option value="simple" <?php if (isset($produit) && $produit["type_produit"] == "simple") {
+                                                    echo "selected";
+                                                } ?>>Simple</option>
+                        <option value="large" <?php if (isset($produit) && $produit["type_produit"] == "large") {
+                                                    echo "selected";
+                                                } ?>>Large</option>
+                        <option value="famille" <?php if (isset($produit) && $produit["type_produit"] == "famille") {
+                                                    echo "selected";
+                                                } ?>>Famille</option>
                     </select>
                 </div>
-                <div>
-                <label for="" style="visibility: hidden">Submit</label>
-                </div>
+                <?php
+                if ($choice == "modif") {
+                ?>
+                    <div>
+                        <div class="div-input">
+                            <label for="" style="visibility: hidden">Submit</label>
+                            <input type="submit" value="Supprimer le menu" name="supprimer_produit">
+                        </div>
+                    </div>
+                <?php
+                } ?>
                 <div class="div-input">
                     <label for="" style="visibility: hidden">Submit</label>
-                    <input type="submit" value="Ajouter" name="ajouter_produit">
+                    <?php
+                    if ($choice == "modif") {
+                    ?>
+                        <input type="submit" value="Modifier le menu" name="modifier_produit">
+                    <?php
+                    } else { ?>
+                        <input type="submit" value="Ajouter le menu" name="ajouter_produit">
+                    <?php
+                    }
+                    ?>
                 </div>
             </form>
         </div>
     </div>
 
+    <!-- display detail commande -->
+    <div class="add-project" id="view_commande"
+        style="transform: <?= (isset($_GET["numero_commande"]) && $_GET["numero_commande"] != null) ? "translateY(0)" : ""  ?>">
+
+        <div class="project">
+            <span id="exit_view_commande">&times;</span>
+            <div class="header">
+                <?php if (isset($msg)) {
+                    echo "<p class=\"erreur\">" . $msg . "</p>";
+                } ?>
+                <h1 class="title">Visualiser une commande numero <?= $commande["num_commande"] ?></h1>
+            </div>
+            <?php
+            if (isset($commande_msg)) {
+            ?>
+                <p class="commande_msg">La commande a ete livre</p>
+            <?php }
+            ?>
+            <div class="body">
+                <div class="infos">
+                    <h1>Date de la commande</h1>
+                    <p><?= $commande["date_commnade"] ?></p>
+                </div>
+                <div class="infos">
+                    <h1>Recuperation le</h1>
+                    <p><?= $commande["date_recup"] ?> a <?= $commande["heure_recup"] ?></p>
+                </div>
+                <div class="infos">
+                    <h1>Pour monsieur</h1>
+                    <p><?= $commande["username"] ?> (<?= $commande["email"] ?>)</p>
+                </div>
+                <div class="infos">
+                    <h1>Representation de</h1>
+                    <p><?= $commande["lieu"] ?></p>
+                </div>
+                <div class="infos">
+                    <h1>Plats</h1>
+                    <p><?= $commande["nom_produit"] ?></p>
+                </div>
+                <div class="infos">
+                    <h1>Type de plat</h1>
+                    <p><?= $commande["type_produit"] ?></p>
+                </div>
+                <div class="infos">
+                    <h1>Nombre de plat</h1>
+                    <p><?= $commande["qte"] ?> plats</p>
+                </div>
+                <div class="infos">
+                    <h1>Supplements</h1>
+                    <p><?= $commande["supplement"] ?></p>
+                </div>
+                <div class="infos">
+                    <h1>Etats de la commande</h1>
+                    <p style="display: inline; margin-top: 16px" class="<?php if ($commande["etat_commande"] == "attente") {
+                                                                            echo "badge-attente";
+                                                                        } else {
+                                                                            echo "badge-livre";
+                                                                        } ?>"><?= $commande["etat_commande"] ?></p>
+                </div>
+            </div>
+            <?php
+            if ($commande["etat_commande"] == "attente") {
+            ?>
+                <form class="form_commande" action="index.php?action=gestion&numero_commande=<?= $commande["num_commande"] ?>" method="post">
+                    <input type="submit" name="brn_commande_livre" value="Marquer comme livre">
+                </form>
+            <?php
+            } ?>
+
+        </div>
+    </div>
+
     <script src="<?= JS ?>gestion.js"></script>
 </body>
+
 </html>

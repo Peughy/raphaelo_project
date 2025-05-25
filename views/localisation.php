@@ -37,7 +37,7 @@
             foreach ($localisations as $localisation) { ?>
                 <div class="shadow-lg group hover:bg-main_color hover:cursor-pointer rounded-radius overflow-hidden">
                     <img src="assets/representationImages/<?= $localisation["image"] ?>" alt="" class="object-cover w-full h-200px">
-                    <h1 class="ml-5 mt-5 text-xl group-hover:text-white"><?= $localisation["lieu"] ?></h1>
+                    <h1 class="ml-5 mt-3 text-xl group-hover:text-white"><?= $localisation["lieu"] ?></h1>
                     <br>
                     <p class="ml-5 mb-3 inline-flex items-center text-lg justify-center text-black group-hover:text-white">
                         <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
