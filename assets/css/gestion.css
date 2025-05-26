@@ -626,8 +626,10 @@ header {
 
 .project {
     background-color: white;
-    width: 50%;
+    width: 60%;
     height: auto;
+    max-height: 80%;
+    overflow: auto;
     padding: 24px;
     border-radius: var(--radius);
     position: relative;

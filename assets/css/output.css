@@ -1427,6 +1427,9 @@ h6 {
 .ml-2 {
   margin-left: 0.5rem;
 }
+.mr-2 {
+  margin-right: 0.5rem;
+}
 
 .ml-28 {
   margin-left: 7rem;
@@ -2662,4 +2665,15 @@ h6 {
   font-weight: bold;
   border-radius: 0;
   color: red;
+}
+
+.commentaires{
+    margin-top: 64px;
+}
+
+.w-25px{
+  width: 25px;
+}
+.h-25px{
+  height: 25px;
 }

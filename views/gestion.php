@@ -229,7 +229,6 @@
                             <td>Date Commande</td>
                             <td>Nom client </td>
                             <td>Tel client</td>
-                            <td>Nom plat</td>
                             <td>Representation agence</td>
                             <td>Etat de la commande</td>
                         </tr>
@@ -249,9 +248,6 @@
                                     </td>
                                     <td>
                                         <p class="name"><?= $commande_info["phone"] ?></p>
-                                    </td>
-                                    <td>
-                                        <p class="name"><?= $commande_info["nom_produit"] ?></p>
                                     </td>
                                     <td>
                                         <p class="name"><?= $commande_info["lieu"] ?></p>
@@ -525,7 +521,7 @@
                 <?php if (isset($msg)) {
                     echo "<p class=\"erreur\">" . $msg . "</p>";
                 } ?>
-                <h1 class="title">Visualiser une commande numero <?= $commande["num_commande"] ?></h1>
+                <h1 class="title">Visualiser une commande numero <?= $commande[0]["num_commande"] ?></h1>
             </div>
             <?php
             if (isset($commande_msg)) {
@@ -536,49 +532,60 @@
             <div class="body">
                 <div class="infos">
                     <h1>Date de la commande</h1>
-                    <p><?= $commande["date_commnade"] ?></p>
+                    <p><?= $commande[0]["date_commnade"] ?></p>
                 </div>
                 <div class="infos">
                     <h1>Recuperation le</h1>
-                    <p><?= $commande["date_recup"] ?> a <?= $commande["heure_recup"] ?></p>
+                    <p><?= $commande[0]["date_recup"] ?> a <?= $commande[0]["heure_recup"] ?></p>
                 </div>
                 <div class="infos">
                     <h1>Pour monsieur</h1>
-                    <p><?= $commande["username"] ?> (<?= $commande["email"] ?>)</p>
+                    <p><?= $commande[0]["username"] ?> (<?= $commande[0]["email"] ?>)</p>
                 </div>
                 <div class="infos">
                     <h1>Representation de</h1>
-                    <p><?= $commande["lieu"] ?></p>
-                </div>
-                <div class="infos">
-                    <h1>Plats</h1>
-                    <p><?= $commande["nom_produit"] ?></p>
-                </div>
-                <div class="infos">
-                    <h1>Type de plat</h1>
-                    <p><?= $commande["type_produit"] ?></p>
-                </div>
-                <div class="infos">
-                    <h1>Nombre de plat</h1>
-                    <p><?= $commande["qte"] ?> plats</p>
-                </div>
-                <div class="infos">
-                    <h1>Supplements</h1>
-                    <p><?= $commande["supplement"] ?></p>
+                    <p><?= $commande[0]["lieu"] ?></p>
                 </div>
                 <div class="infos">
                     <h1>Etats de la commande</h1>
-                    <p style="display: inline; margin-top: 16px" class="<?php if ($commande["etat_commande"] == "attente") {
+                    <p style="display: inline; margin-top: 16px" class="<?php if ($commande[0]["etat_commande"] == "attente") {
                                                                             echo "badge-attente";
                                                                         } else {
                                                                             echo "badge-livre";
-                                                                        } ?>"><?= $commande["etat_commande"] ?></p>
+                                                                        } ?>"><?= $commande[0]["etat_commande"] ?></p>
                 </div>
+                <p></p>
+                <h1 style="margin: 24px 0;">Visualisation des plats</h1>
+                <p></p>
+                <?php
+                foreach ($commande as $commande_detail) {
+                ?>
+                    <div>
+                        <div class="infos">
+                            <h1>Plats</h1>
+                            <p><?= $commande_detail["nom_produit"] ?></p>
+                        </div>
+                        <div class="infos">
+                            <h1>Type de plat</h1>
+                            <p><?= $commande_detail["type_produit"] ?></p>
+                        </div>
+                        <div class="infos">
+                            <h1>Nombre de plat</h1>
+                            <p><?= $commande_detail["qte"] ?> plats</p>
+                        </div>
+                        <div class="infos">
+                            <h1>Supplements</h1>
+                            <p><?= $commande_detail["supplement"] ?></p>
+                        </div>
+                    </div>
+                <?php
+                }
+                ?>
             </div>
             <?php
-            if ($commande["etat_commande"] == "attente") {
+            if ($commande[0]["etat_commande"] == "attente") {
             ?>
-                <form class="form_commande" action="index.php?action=gestion&numero_commande=<?= $commande["num_commande"] ?>" method="post">
+                <form class="form_commande" action="index.php?action=gestion&numero_commande=<?= $commande[0]["num_commande"] ?>" method="post">
                     <input type="submit" name="brn_commande_livre" value="Marquer comme livre">
                 </form>
             <?php

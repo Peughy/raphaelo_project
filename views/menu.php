@@ -31,10 +31,10 @@
     <img src="<?= IMG . "main_menu_img.jpg" ?>" alt="" class="object-cover w-full h-400px">
     <div class="absolute top-1/2 w-full flex justify-center flex-col items-center" style="background-color: rgba(0, 0, 0, .1);">
       <h1 class="title w-full text-white text-center mb-4">Ne tardez plus, commander</h1>
-      <form action="" method="post" class="w-1/2 relative">
-        <input type="search" placeholder="Rechercher..." name="" id="" class="w-full py-3 rounded-radius border-none focus:outline-none px-4">
-        <button type="submit" class="absolute top-0 right-0 px-6 py-3 rounded-r-radius bg-main_color">
-          <p class="text-white">SEARCH</p>
+      <form action="index.php?action=menu" method="post" class="w-1/2 relative">
+        <input type="search" placeholder="Rechercher..." value="<?php if(isset($_POST["nom_menu"])){ echo $_POST["nom_menu"]; } ?>" name="nom_menu" id="" class="w-full py-3 rounded-radius text-xl border-none focus:outline-none px-4">
+        <button type="submit" name="search_menu_btn" class="absolute top-0 right-0 px-6 py-3 rounded-r-radius bg-main_color">
+          <p class="text-white text-xl">SEARCH</p>
         </button>
       </form>
     </div>
@@ -73,43 +73,57 @@
     <div>
       <h1 class="text-5xl text-main_color my-12">De nouvelles recettes pour des gouts encore meilleur</h1>
 
-      <h3 class="text-3xl my-12">Les menus recements ajoutes.</h3>
+      <?php if ($menu_last_infos != null) {
+      ?>
+        <h3 class="text-3xl my-12">Les menus recements ajoutes.</h3>
+      <?php
+      } ?>
       <div class="grid grid-cols-3 gap-6">
 
         <!-- card -->
         <?php
-        foreach ($model_last_infos as $model_info) { ?>
-          <div class="rounded-radius overflow-hidden shadow">
-            <!-- card header -->
-            <div class="relative hover:cursor-pointer group">
-              <img src="<?= "./assets/produitsImages/" . $model_info["image"] ?>" alt="" class="object-cover h-200px w-full">
-              <span class="absolute top-2 right-2 text-main_color font-semibold bg-red-200 p-1 text-xs rounded-radius">nouveau</span>
-              <span class="absolute top-2 left-2 group-hover:block hidden bg-fuchsia-100 p-1 rounded-full">
-                <svg class="w-5 h-5 text-fuchsia-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
-                </svg>
-              </span>
-            </div>
+        if ($menu_last_infos != null) {
+          foreach ($menu_last_infos as $model_info) { ?>
+            <div class="rounded-radius overflow-hidden shadow">
+              <!-- card header -->
+              <div class="relative hover:cursor-pointer group">
+                <img src="<?= "./assets/produitsImages/" . $model_info["image"] ?>" alt="" class="object-cover h-200px w-full">
+                <span class="absolute top-2 right-2 text-main_color font-semibold bg-red-200 p-1 text-xs rounded-radius">nouveau</span>
+                <span class="absolute top-2 left-2 group-hover:block hidden bg-fuchsia-100 p-1 rounded-full">
+                  <svg class="w-5 h-5 text-fuchsia-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+                  </svg>
+                </span>
+              </div>
 
-            <!-- card body -->
-            <div class="p-4 cursor-pointer" id="add_panier">
-              <p id="numeros" style="display: none;"><?= $model_info["id_produit"] ?></p>
-              <h2 class="mb-2 text-xl"><?= ucfirst($model_info["nom_produit"]) ?></h2>
-              <p class="text-lg text-gray-500 mb-3"><?= ucfirst($model_info["ingredient"]) ?></p>
-              <p class="text-white text-lg bg-main_color p-2 rounded-radius inline-block">FCFA <?= $model_info["prix"] ?></p>
-              <p class="text-white text-lg bg-main_color p-2 rounded-radius inline-block">Type de pizza: <?= $model_info["type_produit"] ?></p>
+              <!-- card body -->
+              <div class="p-4 cursor-pointer" id="add_panier">
+                <p id="numeros" style="display: none;"><?= $model_info["id_produit"] ?></p>
+                <h2 class="mb-2 text-xl"><?= ucfirst($model_info["nom_produit"]) ?></h2>
+                <p class="text-lg text-gray-500 mb-3"><?= ucfirst($model_info["ingredient"]) ?></p>
+                <p class="text-white text-lg bg-main_color p-2 rounded-radius inline-block">FCFA <?= $model_info["prix"] ?></p>
+                <p class="text-white text-lg bg-main_color p-2 rounded-radius inline-block">Type de pizza: <?= $model_info["type_produit"] ?></p>
+              </div>
             </div>
-          </div>
-        <?php } ?>
+        <?php }
+        } ?>
       </div>
     </div>
 
-    <h3 class="text-3xl my-12">Les menus que vous connaissez deja.</h3>
+    <?php if ($menu_last_infos != null) {
+    ?>
+      <h3 class="text-3xl my-12">Les menus que vous connaissez deja.</h3>
+    <?php
+    } else {
+    ?>
+      <h3 class="text-3xl my-12">Resultats pour "<?= $_POST["nom_menu"] ?>"</h3>
+    <?php
+    } ?>
     <div class="grid grid-cols-3 gap-6">
 
       <!-- card -->
       <?php
-      foreach ($model_infos as $model_info) { ?>
+      foreach ($menu_infos as $model_info) { ?>
         <div class="rounded-radius overflow-hidden shadow">
           <!-- card header -->
           <div class="relative hover:cursor-pointer group">
@@ -140,7 +154,7 @@
 
   <!-- plus -->
   <div class="w-full h-full fixed flex items-center justify-center  top-0 z-50" id="more_product" style="background-color: rgba(0, 0, 0, .8); transform: <?= (!$pass_info) ? "translate(-100%)" : "" ?>; transition: all .3s ease-out">
-    <div class="flex bg-white bottom-100 overflow-auto" style="margin: 12px; border-radius: 16px; height: 85%; width: 65%">
+    <div class="flex bg-white bottom-100 overflow-auto" style="margin: 12px; border-radius: 16px; height: 97%; width: 97%">
       <div class="p-4 w-full">
         <img src="<?= "./assets/produitsImages/" . $product_one["image"] ?>" alt="" class="object-cover w-full" style="height: 400px;border-radius: 16px">
         <div class="mt-8">
@@ -154,6 +168,48 @@
           <p class="mb-4 text-xl">Type Pizza: <?= ucfirst($product_one["type_produit"]) ?></p>
           <p class="mb-4 text-xl">Prix: <span><?= $product_one["prix"] ?></span> FCFA</p>
         </div>
+
+        <!-- commentaires -->
+        <div class="commentaires">
+          <h1 class="font-bold text-3xl mb-8">Les avis de nos clients</h1>
+          <?php
+          if (!$commentaires) {
+          ?>
+            <p class="text-xl" style="color: gray;">Aucun commentaire....Soyez le premier a commenter</p>
+          <?php
+          }
+          foreach ($commentaires as $commentaire) {
+          ?>
+            <div class="w-full my-5">
+              <div class="w-full mb-3 flex items-center justify-start">
+                <span class="text-xl mr-2 flex items-center justify-center text-white h-25px w-25px rounded-full" style="background-color: green;">
+                  <?= ucfirst($commentaire["username"][0]) ?>
+                </span>
+                <div class="flex items-center justify-center">
+                  <p class="text-lg mr-2"><?= $commentaire["username"] ?></p>
+                  <p class="text-sm" style="color: grey;">Le <?= $commentaire["date_commentaire"] ?></p>
+                </div>
+              </div>
+              <p class="text-xl ml-5"><?= $commentaire["content"] ?></p>
+            </div>
+            <hr>
+          <?php
+          }
+          ?>
+
+          <?php
+          if (isset($error_msg_comment)) {
+          ?>
+            <p class="text-sm w-full bg-main_color text-white p-4 my-4 rounded-radius"><?= $error_msg_comment ?></p>
+          <?php
+          }
+          ?>
+          <form action="index.php?action=menu&id_produit=<?= $_GET["id_produit"] ?>" method="post" class="my-8 w-full flex items-center justify-center">
+            <textarea name="content_comment" id="" cols="30" rows="1" class="w-full rounded-radius text-xl" style="outline: none; background-color: #f7f3f3" placeholder="Votre commentaires"></textarea>
+            <input type="submit" value="Commenter" name="comment_btn" class="ml-2 py-2 px-2 bg-main_color text-xl text-white rounded-radius cursor-pointer">
+          </form>
+          <p style="visibility: hidden;">Raphaelo</p>
+        </div>
       </div>
       <!-- commander -->
       <div class="border border-main_color rounded-radius w-full relative" style="margin: 10px; padding: 18px;">
@@ -164,20 +220,20 @@
           <?php
           if (isset($error_msg)) {
           ?>
-              <p class="text-sm bg-main_color text-white p-4 my-4 rounded-radius"><?= $error_msg ?></p>
+            <p class="text-sm bg-main_color text-white p-4 my-4 rounded-radius"><?= $error_msg ?></p>
           <?php
           }
           ?>
 
           <!-- quantite -->
           <div class="flex justify-start w-full flex-col">
-            <p class="text-gray-500 mr-5">Mettre une quantiete</p>
-            <input name="qte_commande" class="py-7px px-4 border outline-none rounded-radius border-main_color bg-white text-main_color" value="1" id="qte">
+            <p class="text-gray-500 mr-5 text-xl">Mettre une quantiete</p>
+            <input name="qte_commande" class="text-xl py-7px px-4 border outline-none rounded-radius border-main_color bg-white text-main_color" value="1" id="qte">
           </div>
 
           <div class="my-5 flex flex-col">
-            <p class="text-gray-500 mr-5">Representation finale </p>
-            <select name="representation" id="type" class="rounded-radius outline-none" style="cursor: pointer;">
+            <p class="text-gray-500 mr-5 text-xl">Representation finale </p>
+            <select name="representation" id="type" class="text-xl rounded-radius outline-none" style="cursor: pointer;">
               <option value="">--</option>
               <?php
               foreach ($representations as $representation) { ?>
@@ -188,16 +244,16 @@
 
           <!--  temps livraison -->
           <div class="flex flex-col">
-            <p class="text-gray-500 mb-4">Recuperation le</p>
-            <input type="date" name="recup_date" id="" class="w-ful outline-none mx-3 p-2 rounded-radius border border-main_color">
+            <p class="text-gray-500 mb-4 text-xl">Recuperation le</p>
+            <input type="date" name="recup_date" id="" class=" text-xl w-ful outline-none mx-3 p-2 rounded-radius border border-main_color">
             <p class="text-gray-500">a</p>
-            <input type="time" name="recup_heure" id="" class="w-full outline-none mx-3 rounded-radius border border-main_color">
+            <input type="time" name="recup_heure" id="" class="text-xl w-full outline-none mx-3 rounded-radius border border-main_color">
           </div>
 
           <!-- description -->
           <div class="my-8">
-            <p class="text-gray-500 mb-4">Que voulez vous?</p>
-            <textarea name="supplement" id="" cols="30" rows="5" style="outline: none; background-color: #f7f3f3" class="border border-main_color outline-none border-none text-gray-500 rounded-radius w-full" placeholder="Personalisez vos commande en fonction de votre gout!"></textarea>
+            <p class="text-gray-500 mb-4 text-xl">Que voulez vous?</p>
+            <textarea name="supplement" id="" cols="30" rows="10" style="outline: none; background-color: #f7f3f3" class="border text-xl border-main_color outline-none border-none text-gray-500 rounded-radius w-full" placeholder="Personalisez vos commande en fonction de votre gout!"></textarea>
           </div>
 
           <div class="flex justify-between mb-6">
@@ -212,7 +268,7 @@
               <svg class="w-6 h-6 text-main_color group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                 <path fill-rule="evenodd" d="M3 4a1 1 0 0 0-.822 1.57L6.632 12l-4.454 6.43A1 1 0 0 0 3 20h13.153a1 1 0 0 0 .822-.43l4.847-7a1 1 0 0 0 0-1.14l-4.847-7a1 1 0 0 0-.822-.43H3Z" clip-rule="evenodd" />
               </svg>
-              <p class="ml-3 text-main_color group-hover:text-white text-xl">commander</p>
+              <p class="ml-3 text-main_color group-hover:text-white text-xl">Commander</p>
             </button>
           </div>
 
