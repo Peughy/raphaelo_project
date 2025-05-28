@@ -41,7 +41,7 @@
         <button class="navLinks <?php if (!isset($_GET["error"])) {
                                     echo "active";
                                 } ?>">Mes commandes</button>
-        <button class="navLinks">Mon panier</button>
+        <!-- <button class="navLinks">Mon panier</button> -->
         <button class="navLinks <?php if (isset($_GET["error"])) {
                                     echo "active";
                                 } ?>">Profil</button>

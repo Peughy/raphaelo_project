@@ -1,0 +1,140 @@
+:root {
+    --main-color: #ff0000;
+    --sub-main-color: #fff;
+    --radius: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "DM Serif Display";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.add-project {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-200%);
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+    overflow: auto;
+    z-index: 100;
+}
+
+.project {
+    background-color: white;
+    width: 60%;
+    height: auto;
+    max-height: 80%;
+    overflow: auto;
+    padding: 24px;
+    border-radius: var(--radius);
+    position: relative;
+}
+
+.project .header {
+    margin: 24px 0;
+}
+
+
+.project .body {
+    margin: 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.body .infos {
+    margin-bottom: 24px;
+}
+
+.infos h1 {
+    font-size: 18px;
+}
+
+.infos p {
+    font-size: 24px;
+}
+
+.project .header .title {
+    font-size: 38px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.project .header .form_commande {
+    width: 100%;
+}
+
+.project .commande_msg {
+    padding: 8px;
+    color: white;
+    background-color: green;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+#exit_panier {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: var(--radius);
+}
+
+#exit_panier:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.total-panier{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.panier-nom{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.panier-type{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.panier-supprimer{
+    font-size: 18px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: white;
+    padding: 3px 5px;
+}
+
+.panier-div{
+    margin-bottom: 16px;
+}
