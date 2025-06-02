@@ -5,10 +5,13 @@ session_start();
 require_once MODEL . "gestion_model.php";
 require_once MODEL . "produit_model.php";
 require_once MODEL . "commande_model.php";
+require_once MODEL . "localisation_model.php";
 
-require_once "class/AjouterLivreur.php";
 require_once "class/AjouterProduit.php";
 require_once "class/ModifierProduit.php";
+require_once "class/ModifierProduit.php";
+require_once "class/AjouterRepresentation.php";
+require_once "class/ModifierRepresentation.php";
 
 if (!isset($_SESSION["access"]) || !$_SESSION["access"]) {
     header("Location: index.php?action=signIn");
@@ -128,7 +131,7 @@ if (isset($_POST["search_menu_btn"])) {
     $products_infos = $produit_model->getNameProduit($name_menu_search);
 }
 
-if(isset($_POST["cancel_menu_btn"])){
+if (isset($_POST["cancel_menu_btn"])) {
     $_POST["name_menu_search"] = null;
     $products_infos = $produit_model->getAll();
 }
@@ -169,9 +172,75 @@ if (isset($_POST["search_commande_btn"])) {
     ];
 }
 
-if(isset($_POST["cancel_commande_btn"])){
+if (isset($_POST["cancel_commande_btn"])) {
     $_POST["num_commande_search"] = null;
     $commande_infos = $model_commande->getAllCommande();
+}
+
+
+/**
+ * 
+ * Representation
+ * 
+ */
+$localisation_model = new ModelLocalisation();
+$representations_infos = $localisation_model->getInformations();
+
+$choice_rep = "";
+if (isset($_GET["choice_rep"])) {
+    $choice_rep = $_GET["choice_rep"];
+}
+
+if (isset($_POST["ajouter_rep"])) {
+    $lieu = $_POST["lieu"];
+    $phone = $_POST["phone"];
+    $facebook = $_POST["facebook"];
+    $instagram = $_POST["instagram"];
+    $image = $_FILES["image"];
+
+    $ajouter_representation = new AjouterRepresentation();
+    $ajouter_representation->setInformations($lieu, $phone, $facebook, $instagram, $image);
+}
+
+if (isset($_GET["error"]) && !empty($_GET["error"]) && isset($_GET["choice_rep"])) {
+    $msg = $_GET["error"];
+
+    if ($_GET["error"] == "emptyfield")
+        $msg = "Veuillez remplir tout les champs!";
+
+    if ($_GET["error"] == "error")
+        $msg = "Nous avons rencontres une erreur!";
+
+    if ($_GET["error"] == "errorImage")
+        $msg = "Erreur lors du traitement de la photo!";
+
+    if ($_GET["error"] == "deleteError")
+        $msg = "Erreur lors de la suppression";
+}
+
+
+if (isset($_GET["id_representation"])) {
+    $representation = $localisation_model->getInformation($_GET["id_representation"]);
+}
+
+if (isset($_POST["modifier_rep"])) {
+    $lieu = $_POST["lieu"];
+    $phone = $_POST["phone"];
+    $facebook = $_POST["facebook"];
+    $instagram = $_POST["instagram"];
+
+    $modifier_representation = new ModifierRepresentation();
+    $modifier_representation->updateRepresentation($_GET["id_representation"], $lieu, $phone, $facebook, $instagram);
+}
+
+if (isset($_POST["supprimer_rep"])) {
+    $rep =  $localisation_model->deleteRepresentation($_GET["id_representation"]);
+
+    if ($rep) {
+        header("Location: index.php?action=gestion");
+    } else {
+        header("Location: index.php?action=gestion&id_representation=" . $_GET["id_representation"] . "&error=deleteError&choice_rep=modif");
+    }
 }
 
 require_once(VIEW . "gestion.php");

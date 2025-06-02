@@ -473,6 +473,7 @@ header {
 .client-presentation,
 .task-project,
 .produit-presentation,
+.localisation-presentation,
 .profil-sections {
     display: none;
 }
@@ -771,6 +772,7 @@ header {
 }
 
 #exit_add_produit,
+#exit_add_representation,
 #exit_view_commande {
     position: absolute;
     top: 10px;
@@ -782,6 +784,7 @@ header {
 }
 
 #exit_add_produit:hover,
+#exit_add_representation:hover,
 #exit_view_commande:hover {
     background-color: var(--main-color);
     color: white;
@@ -1255,5 +1258,12 @@ header {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 32px;
+    }
+
+    .content .card-group {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        margin-top: 32px;
     }
 }

@@ -58,6 +58,15 @@
                             Menu - Recette
                         </button>
                     </li>
+                    <li>
+                        <button href="" id="link" class="link">
+                            <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M5.535 7.677c.313-.98.687-2.023.926-2.677H17.46c.253.63.646 1.64.977 2.61.166.487.312.953.416 1.347.11.42.148.675.148.779 0 .18-.032.355-.09.515-.06.161-.144.3-.243.412-.1.111-.21.192-.324.245a.809.809 0 0 1-.686 0 1.004 1.004 0 0 1-.324-.245c-.1-.112-.183-.25-.242-.412a1.473 1.473 0 0 1-.091-.515 1 1 0 1 0-2 0 1.4 1.4 0 0 1-.333.927.896.896 0 0 1-.667.323.896.896 0 0 1-.667-.323A1.401 1.401 0 0 1 13 9.736a1 1 0 1 0-2 0 1.4 1.4 0 0 1-.333.927.896.896 0 0 1-.667.323.896.896 0 0 1-.667-.323A1.4 1.4 0 0 1 9 9.74v-.008a1 1 0 0 0-2 .003v.008a1.504 1.504 0 0 1-.18.712 1.22 1.22 0 0 1-.146.209l-.007.007a1.01 1.01 0 0 1-.325.248.82.82 0 0 1-.316.08.973.973 0 0 1-.563-.256 1.224 1.224 0 0 1-.102-.103A1.518 1.518 0 0 1 5 9.724v-.006a2.543 2.543 0 0 1 .029-.207c.024-.132.06-.296.11-.49.098-.385.237-.85.395-1.344ZM4 12.112a3.521 3.521 0 0 1-1-2.376c0-.349.098-.8.202-1.208.112-.441.264-.95.428-1.46.327-1.024.715-2.104.958-2.767A1.985 1.985 0 0 1 6.456 3h11.01c.803 0 1.539.481 1.844 1.243.258.641.67 1.697 1.019 2.72a22.3 22.3 0 0 1 .457 1.487c.114.433.214.903.214 1.286 0 .412-.072.821-.214 1.207A3.288 3.288 0 0 1 20 12.16V19a2 2 0 0 1-2 2h-6a1 1 0 0 1-1-1v-4H8v4a1 1 0 0 1-1 1H6a2 2 0 0 1-2-2v-6.888ZM13 15a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2Z" clip-rule="evenodd" />
+                            </svg>
+
+                            Representations
+                        </button>
+                    </li>
                 </ul>
             </div>
             <div style="padding: 24px 0 24px 24px; margin: 12px 0;">
@@ -112,8 +121,18 @@
         <div class="content">
 
             <!-- title section -->
-            <div class="title">
-                <h1 style="color: #ff0000">Gestion Raphaëlo</h1>
+            <div style="display: flex; align-items: center; justify-content:space-between">
+                <div class="title">
+                    <h1 style="color: #ff0000">Gestion Raphaëlo</h1>
+                </div>
+                <div class="add-message">
+                    <button class="add" id="btnAddRepresenatation">
+                        <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5" />
+                        </svg>
+                        Ajouter une representation
+                    </button>
+                </div>
             </div>
 
             <!-- card presentation -->
@@ -167,6 +186,23 @@
                     <!-- body -->
                     <div class="card-body">
                         <p class="number"><?= count($products_infos) ?></p>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <!-- header -->
+                    <div class="card-header">
+                        <p>Representations</p>
+                        <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M5.535 7.677c.313-.98.687-2.023.926-2.677H17.46c.253.63.646 1.64.977 2.61.166.487.312.953.416 1.347.11.42.148.675.148.779 0 .18-.032.355-.09.515-.06.161-.144.3-.243.412-.1.111-.21.192-.324.245a.809.809 0 0 1-.686 0 1.004 1.004 0 0 1-.324-.245c-.1-.112-.183-.25-.242-.412a1.473 1.473 0 0 1-.091-.515 1 1 0 1 0-2 0 1.4 1.4 0 0 1-.333.927.896.896 0 0 1-.667.323.896.896 0 0 1-.667-.323A1.401 1.401 0 0 1 13 9.736a1 1 0 1 0-2 0 1.4 1.4 0 0 1-.333.927.896.896 0 0 1-.667.323.896.896 0 0 1-.667-.323A1.4 1.4 0 0 1 9 9.74v-.008a1 1 0 0 0-2 .003v.008a1.504 1.504 0 0 1-.18.712 1.22 1.22 0 0 1-.146.209l-.007.007a1.01 1.01 0 0 1-.325.248.82.82 0 0 1-.316.08.973.973 0 0 1-.563-.256 1.224 1.224 0 0 1-.102-.103A1.518 1.518 0 0 1 5 9.724v-.006a2.543 2.543 0 0 1 .029-.207c.024-.132.06-.296.11-.49.098-.385.237-.85.395-1.344ZM4 12.112a3.521 3.521 0 0 1-1-2.376c0-.349.098-.8.202-1.208.112-.441.264-.95.428-1.46.327-1.024.715-2.104.958-2.767A1.985 1.985 0 0 1 6.456 3h11.01c.803 0 1.539.481 1.844 1.243.258.641.67 1.697 1.019 2.72a22.3 22.3 0 0 1 .457 1.487c.114.433.214.903.214 1.286 0 .412-.072.821-.214 1.207A3.288 3.288 0 0 1 20 12.16V19a2 2 0 0 1-2 2h-6a1 1 0 0 1-1-1v-4H8v4a1 1 0 0 1-1 1H6a2 2 0 0 1-2-2v-6.888ZM13 15a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2Z" clip-rule="evenodd" />
+                        </svg>
+
+                    </div>
+
+                    <!-- body -->
+                    <div class="card-body">
+                        <p class="number"><?= count($representations_infos) ?></p>
                     </div>
                 </div>
 
@@ -325,6 +361,50 @@
                             </div>
                     <?php }
                     } ?>
+                </div>
+            </div>
+
+            <!-- commandes -->
+            <div class="localisation-presentation">
+                <div class="project-display" id="project-lists">
+                    <table class="table">
+                        <tr class="head">
+                            <td>Lieu</td>
+                            <td>Telephone </td>
+                            <td>Facebook</td>
+                            <td>Instagram</td>
+                        </tr>
+                        <?php
+                        foreach ($representations_infos as $representations_info) {
+                            if ($representations_info) {
+                        ?>
+                                <tr class="body">
+                                    <td>
+                                        <p class="email"><?= $representations_info["lieu"] ?></p>
+                                        <p id="id_representations" style="display: none;"><?= $representations_info["id_representation"] ?></p>
+                                    </td>
+                                    <td>
+                                        <p class="email"><?= $representations_info["tel"] ?></p>
+                                    </td>
+                                    <td>
+                                        <p class="name"><?= $representations_info["facebook"] ?></p>
+                                    </td>
+                                    <td>
+                                        <p class="name"><?= $representations_info["instagram"] ?></p>
+                                    </td>
+                                    <td>
+                                        <button class="delete" id="views_btn_representations" onclick="">
+                                            <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                                <path fill-rule="evenodd" d="M11.32 6.176H5c-1.105 0-2 .949-2 2.118v10.588C3 20.052 3.895 21 5 21h11c1.105 0 2-.948 2-2.118v-7.75l-3.914 4.144A2.46 2.46 0 0 1 12.81 16l-2.681.568c-1.75.37-3.292-1.263-2.942-3.115l.536-2.839c.097-.512.335-.983.684-1.352l2.914-3.086Z" clip-rule="evenodd" />
+                                                <path fill-rule="evenodd" d="M19.846 4.318a2.148 2.148 0 0 0-.437-.692 2.014 2.014 0 0 0-.654-.463 1.92 1.92 0 0 0-1.544 0 2.014 2.014 0 0 0-.654.463l-.546.578 2.852 3.02.546-.579a2.14 2.14 0 0 0 .437-.692 2.244 2.244 0 0 0 0-1.635ZM17.45 8.721 14.597 5.7 9.82 10.76a.54.54 0 0 0-.137.27l-.536 2.84c-.07.37.239.696.588.622l2.682-.567a.492.492 0 0 0 .255-.145l4.778-5.06Z" clip-rule="evenodd" />
+                                            </svg>
+
+                                        </button>
+                                    </td>
+                                </tr>
+                        <?php }
+                        } ?>
+                    </table>
                 </div>
             </div>
 
@@ -593,6 +673,101 @@
 
         </div>
     </div>
+    
+
+    <!-- add representation  -->
+    <div class="add-project" id="add_representation"
+        style="transform:  <?= (isset($_GET["choice_rep"]) && $_GET["choice_rep"]) ? "translateY(0)" : ""  ?>">
+        <div class="project">
+            <span id="exit_add_representation">&times;</span>
+            <div class="header">
+                <?php if (isset($msg)) {
+                    echo "<p class=\"erreur\">" . $msg . "</p>";
+                } ?>
+                <h1 class="title">
+                    <?php
+                    if ($choice_rep == "modif") {
+                        echo "Modifier ";
+                    } else {
+                        echo "Ajouter ";
+                    }
+                    ?> une representation</h1>
+            </div>
+            <form action="<?php
+                            if ($choice_rep == "modif") {
+                                echo "index.php?action=gestion&id_representation=" . $_GET["id_representation"] . "&choice_rep=modif";
+                            } else {
+                                echo "index.php?action=gestion&choice_rep=add ";
+                            }
+                            ?>" enctype="multipart/form-data" method="post" enctype="multipart/form-data" class="form_activite">
+                <div class="div-input">
+                    <label for="name" class="name">Lieu</label>
+                    <input type="text" placeholder="Lieu" name="lieu" value="<?php if (isset($representation)) {
+                                                                                        echo $representation["lieu"];
+                                                                                    } ?>">
+                </div>
+                <div class="div-input">
+                    <label for="name" class="name">Telephone</label>
+                    <input type="name"  placeholder="Telephone" name="phone" value="<?php if (isset($representation)) {
+                                                                                            echo $representation["tel"];
+                                                                                        } ?>">
+                </div>
+                <div class="div-input">
+                    <label for="name" class="name">Facebook</label>
+                    <input type="text" placeholder="Facebook" name="facebook" value="<?php if (isset($representation)) {
+                                                                                        echo $representation["facebook"];
+                                                                                    } ?>">
+                </div>
+                <div class="div-input">
+                    <label for="name" class="name">Instagram</label>
+                    <input type="text" placeholder="Instagram" name="instagram" value="<?php if (isset($representation)) {
+                                                                                        echo $representation["instagram"];
+                                                                                    } ?>">
+                </div>
+                <div class="div-input">
+                    <?php
+                    if ($choice_rep == "add") { ?>
+                        <label for="name" class="name">Photo d'illustration</label>
+                        <input type="file" name="image" id="">
+                    <?php
+
+                    } else { ?>
+                        <img src="assets/representationImages/<?= $representation["image"] ?>" alt="" style="object-fit: cover; width: 100%; height: 150px; border-radius: 16px">
+                    <?php
+                    }
+                    ?>
+                </div>
+                <div style="visibility: hidden;">
+                    <p>Suivant</p>
+                </div>
+                <?php
+                if ($choice_rep == "modif") {
+                ?>
+                    <div>
+                        <div class="div-input">
+                            <label for="" style="visibility: hidden">Submit</label>
+                            <input type="submit" value="Supprimer la representation" name="supprimer_rep">
+                        </div>
+                    </div>
+                <?php
+                } ?>
+                <div class="div-input">
+                    <label for="" style="visibility: hidden">Submit</label>
+                    <?php
+                    if ($choice_rep == "modif") {
+                    ?>
+                        <input type="submit" value="Modifier la representation" name="modifier_rep">
+                    <?php
+                    } else { ?>
+                        <input type="submit" value="Ajouter la representation" name="ajouter_rep">
+                    <?php
+                    }
+                    ?>
+                </div>
+            </form>
+        </div>
+    </div>
+
 
     <script src="<?= JS ?>gestion.js"></script>
 </body>

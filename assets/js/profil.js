@@ -6,8 +6,8 @@ let commandes = document.getElementById("commandes");
 let paniers = document.getElementById("paniers");
 let profil = document.getElementById("profil");
 
-let titles = ["Dashboard", "Mes commandes", "Mon panier", "Profils"];
-let divs = [dashboard, commandes, paniers, profil];
+let titles = ["Dashboard", "Mes commandes", "Profils"];
+let divs = [dashboard, commandes, profil];
 
 navLinks.forEach((navLink, index) => {
     navLink.addEventListener('click', () => {

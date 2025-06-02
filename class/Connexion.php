@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 require_once(MODEL.'connexion_model.php');
 

@@ -3,12 +3,13 @@
 let clients = document.querySelector(".client-presentation");
 let commandes = document.querySelector(".commande-presentation");
 let produits = document.querySelector(".produit-presentation");
+let localisation = document.querySelector(".localisation-presentation");
 let profil = document.querySelector(".profil-sections");
 
 let links = document.querySelectorAll("#link");
 let title = document.getElementById("title");
-let titles = ["Clients", "Commandes", "Menu - Recettes", "Produits", "Mon profil"];
-const sections = [clients, commandes, produits, profil];
+let titles = ["Clients", "Commandes", "Menu - Recettes", "Representations", "Mon profil"];
+const sections = [clients, commandes, produits, localisation, profil];
 
 
 links.forEach((link, index) => {
@@ -85,6 +86,36 @@ view_menus.forEach((view_menu, index) =>{
   })
 })
 
+
+// 
+// representations
+// 
+
+
+let add_representation = document.getElementById("add_representation");
+let btnAddRepresenatation = document.getElementById("btnAddRepresenatation");
+let exit_add_representation = document.getElementById("exit_add_representation");
+
+btnAddRepresenatation.addEventListener('click', () => {
+  let url = window.location.href;
+  window.location.href = url + "&choice_rep=add";
+})
+
+exit_add_representation.addEventListener('click', () => {
+  add_representation.style.transform = "translateY(-100%)";
+  let url = window.location.href;
+  history.replaceState({}, "", url.split("&")[0])
+})
+
+let id_representations = document.querySelectorAll("#id_representations");
+let views_btn_representations = document.querySelectorAll("#views_btn_representations");
+
+views_btn_representations.forEach((views_btn_representation, index) =>{
+  views_btn_representation.addEventListener('click', () => {
+    let url = window.location.href;
+    window.location.href = url + "&id_representation=" + encodeURIComponent(id_representations[index].innerHTML) + "&choice_rep=modif";
+  })
+})
 
 //
 // commande
